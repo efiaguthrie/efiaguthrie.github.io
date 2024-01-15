@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8" />
+                <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+                <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1.0"
+                />
+                <title>My Clifford Movie Lookup Site</title>
+                <!----------font awesome icons cdn  -->
+
+                <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+                integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+                 crossorigin="anonymous"/>"
+                <!---------- my css------->
+                <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+                <input type="text" name="apikey" id="apikey" class="form-control" placeholder="apikey">
+                <div class="wrapper">
+                  <div class="form">
+                    <form id="search-form">
+                      
+                    </form>
+                  </div>
+                        <!---logo-->
+                        <div class="logo">
+                                <div class="container">
+                                        <p>Movie<span> Steelo.</span></p>
+                                </div>
+                        </div>
+                        <!--end of logo-->
+                        <!----search container-->
+                        <div class="search-container">
+                                <div class="search-element">
+                                        <h3>Search Movie:</h3>
+                                        <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Search Movie Title..."
+                                                id="movie-search-box"
+                                                onkeyup = "findMovies()"
+                                                onclick = "findMovies()"/>
+                                        <div class="search-list" id="search-list">
+
+                                          
+                                             
+                                          <!---list here-->
+                                          <div class="search-list-item">
+                                            <div class="search-item-thumbnail">
+                                              <img alt="medium sized poster of the movie Clifford" src="mediumsize-cover.png">
+                                            </div>
+                                            <div class="search-item-info">
+                                              <h3> Clifford</h3>
+                                              <p>1994</p>
+                                            </div>
+                                          </div>
+                                          
+                                          </div>
+                                        
+
+                                        </div>
+                                </div>
+                        </div>
+                        <!---end of search container-->
+                        <!---result container-->
+                        <div class="container">
+                          <div class="result-container">
+                            <div class="result-grid" id="result-grid">
+                              <!----movie information here-->
+                              <div class="movie-poster">
+                                <img src="mediumsize-cover.png" alt="movie poster">
+                              </div>
+                              <div class="movie-info">
+                                <h3 class="movie-title">Clifford</h3>
+                                <ul class="movie-misc-info">
+                                  <li class="year">Year:1994</li>
+                                  <li class="rated">Ratings: PG</li>
+                                  <li class="released">Released: 01 Apr 1994</li> 
+                                </ul>
+                                <p class="genre"><b>Genre:</b>Comedy</p>
+                                <p class="writer"><b>Writers:William Porter, Steven Kampmann</b></p>
+                                <p class="actors"><b>Actors:Martin Short, Charles Grodin, Mary Steenburgen</b></p>
+                                <p class="plot"><b>Plot:</b>A bratty 10-year old boy is obsessed with visiting a 
+                                dinosar-themed amusement park. His uptight uncle takes the wily tyke in for a week,
+                                and barely lives to regret it.
+                                <p class="language"><b> Language:</b>English</p>
+                                <p class="awards"><b>Awards:</b>N/A</p>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                
+                <!--------movie app js ------>
+                <script src="main.js"></script>
+
+        </body>
+</html>
